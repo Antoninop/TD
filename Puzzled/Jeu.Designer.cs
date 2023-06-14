@@ -48,6 +48,7 @@
             this.picBoxJeu7 = new System.Windows.Forms.PictureBox();
             this.picBoxJeu8 = new System.Windows.Forms.PictureBox();
             this.picBoxJeu9 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxJeu1)).BeginInit();
@@ -73,6 +74,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.picBox9);
             this.panel1.Controls.Add(this.picBox8);
             this.panel1.Controls.Add(this.picBox7);
@@ -305,6 +307,17 @@
             this.picBoxJeu9.DragDrop += new System.Windows.Forms.DragEventHandler(this.picBoxJeu_DragDrop);
             this.picBoxJeu9.DragEnter += new System.Windows.Forms.DragEventHandler(this.picBoxJeu_DragEnter);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(32, 514);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(215, 43);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Modèle";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Jeu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -361,6 +374,7 @@
         private System.Windows.Forms.PictureBox picBoxJeu4;
         private System.Windows.Forms.PictureBox picBoxJeu3;
         private System.Windows.Forms.PictureBox picBoxJeu2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

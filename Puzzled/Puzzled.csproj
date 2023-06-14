@@ -58,6 +58,12 @@
     <Compile Include="Jeu.Designer.cs">
       <DependentUpon>Jeu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modele.Designer.cs">
+      <DependentUpon>Modele.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Jeu.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPartie.resx">
       <DependentUpon>MenuPartie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modele.resx">
+      <DependentUpon>Modele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -118,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fond_puzzled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nemoComplet.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

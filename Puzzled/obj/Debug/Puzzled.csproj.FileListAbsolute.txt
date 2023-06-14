@@ -10,3 +10,4 @@ C:\Users\steam\Desktop\td\Puzzled\bin\Debug\Puzzled.pdb
 C:\Users\steam\Desktop\td\Puzzled\obj\Debug\Puzzled.Jeu.resources
 C:\Users\steam\Desktop\td\Puzzled\obj\Debug\Puzzled.exe
 C:\Users\steam\Desktop\td\Puzzled\obj\Debug\Puzzled.pdb
+C:\Users\steam\Desktop\td\Puzzled\obj\Debug\Puzzled.Modele.resources
