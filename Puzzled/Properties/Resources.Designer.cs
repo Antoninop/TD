@@ -63,6 +63,16 @@ namespace Puzzled.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fond_puzzled {
+            get {
+                object obj = ResourceManager.GetObject("fond_puzzled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap nemo9p_1 {
             get {
                 object obj = ResourceManager.GetObject("nemo9p_1", resourceCulture);

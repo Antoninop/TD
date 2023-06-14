@@ -19,6 +19,16 @@ namespace Puzzled
             InitializeComponent();
             InitializePicboxes();
             ShuffleImagesInPicboxes();
+
+            picBoxJeu1.AllowDrop = true;
+            picBoxJeu2.AllowDrop = true;
+            picBoxJeu3.AllowDrop = true;
+            picBoxJeu4.AllowDrop = true;
+            picBoxJeu5.AllowDrop = true;
+            picBoxJeu6.AllowDrop = true;
+            picBoxJeu7.AllowDrop = true;
+            picBoxJeu8.AllowDrop = true;
+            picBoxJeu9.AllowDrop = true;
         }
 
         private void InitializePicboxes()
@@ -53,7 +63,31 @@ namespace Puzzled
                 shuffledPicboxes.RemoveAt(randomIndex);
             }
 
-            
+        }
+
+        // Drag and drop 
+
+        private void picBox_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            PictureBox img = (PictureBox)sender;
+            if (e.Button == MouseButtons.Left)
+                img.DoDragDrop(img.Image, DragDropEffects.Move);
+        }
+
+        private void picBoxJeu_DragEnter(object sender, DragEventArgs e)
+        {
+            PictureBox img = (PictureBox)sender;
+            if (e.Data.GetDataPresent(DataFormats.Bitmap))
+                e.Effect = DragDropEffects.Move;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void picBoxJeu_DragDrop(object sender, DragEventArgs e)
+        {
+            PictureBox img = (PictureBox)sender;
+            img.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
         }
     }
 }

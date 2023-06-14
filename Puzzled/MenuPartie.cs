@@ -26,5 +26,11 @@ namespace Puzzled
         {
 
         }
+
+        private void btn_Valider_Click(object sender, EventArgs e)
+        {
+            Jeu jeu = new Jeu();
+            jeu.Show();
+        }
     }
 }

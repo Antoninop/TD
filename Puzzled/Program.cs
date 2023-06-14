@@ -16,7 +16,7 @@ namespace Puzzled
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Jeu());
+            Application.Run(new MenuPartie());
         }
     }
 }
