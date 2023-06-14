@@ -16,5 +16,15 @@ namespace Puzzled
         {
             InitializeComponent();
         }
+
+        private void Jeu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
